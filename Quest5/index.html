@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anchor Tag to Select Dropdown Option</title>
+    <script>
+      function selectOption(optionValue) {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.value = optionValue;
+      }
+    </script>
+  </head>
+  <body>
+    <select id="myDropdown">
+      <option value="page1">Page 1</option>
+      <option value="page2">Page 2</option>
+      <option value="page3">Page 3</option>
+    </select>
+
+    <a href="#" onclick="selectOption('page1')">Select Page 1</a>
+    <a href="#" onclick="selectOption('page2')">Select Page 2</a>
+    <a href="#" onclick="selectOption('page3')">Select Page 3</a>
+  </body>
+</html>
